@@ -13,15 +13,47 @@ import CoreData
 
 class UserViewController: UIViewController {
     
-    
+    var dataArrayWithRoomNumber:NSMutableArray = []
+    var dataArrayWithRoomStrings:NSMutableArray = []
+    var dataArrayWithRating:NSMutableArray = []
     
     @IBOutlet weak var rating: RateView!
     @IBOutlet weak var roomNumberTF: UITextField!
-    
     @IBOutlet weak var descriptionText: UITextView!
     @IBOutlet weak var changeLBLText: UILabel!
     //  @IBOutlet weak var ratingTextLBL: UILabel!
+   
     
+    
+    func fetch() {
+        let query = PFQuery(className:"Rating")
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [PFObject]?, error: NSError?) -> Void in
+            
+            if error == nil {
+                // The find succeeded.
+                for object in objects!{
+                    
+                    self.dataArrayWithRoomNumber.addObject(object["roomNumber"] as! Int)
+                    self.dataArrayWithRating.addObject(object["rating"] as! Int)
+                    // dataDictionary[(dataArrayWithRoomNumber as? Int)!].append(dataArrayWithRating)
+                    
+                }
+                print(self.dataArrayWithRating)
+                print(self.dataArrayWithRoomNumber)
+            }
+            else {
+                // Log details of the failure
+                self.displayAlertWithTitle("Oops", message: "\(error!) \(error!.userInfo)")
+            }
+            
+            for roomNumber in 0 ..< self.dataArrayWithRoomNumber.count{
+                self.dataArrayWithRoomStrings.addObject(String(self.dataArrayWithRoomNumber[(roomNumber)]))
+                
+            }
+        }
+    }
+
     
     
     //Function to save the rating and review given for a room number by a user
@@ -77,6 +109,8 @@ class UserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetch()
+
         // Do any additional setup after loading the view, typically from a nib.
         _ = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(UserViewController.update), userInfo: nil, repeats: true)
         changeLBLText.hidden = true

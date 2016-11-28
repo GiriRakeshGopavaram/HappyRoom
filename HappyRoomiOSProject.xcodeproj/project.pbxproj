@@ -12,6 +12,7 @@
 		7E69A58E1DC17B3900CC65DB /* Christmas Star-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E69A58D1DC17B3900CC65DB /* Christmas Star-50.png */; };
 		7E69A5901DC17CE500CC65DB /* Christmas Star-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E69A58F1DC17CE500CC65DB /* Christmas Star-25.png */; };
 		7F5274341DB97B580037261C /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5274331DB97B580037261C /* RateView.swift */; };
+		7F5AECDD1DDABCA5005FFB4E /* ScatterPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5AECDC1DDABCA5005FFB4E /* ScatterPlotView.swift */; };
 		7F6216E51DD533A1002D65B2 /* filledStar1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F6216E41DD533A1002D65B2 /* filledStar1.png */; };
 		7F6216E81DD535ED002D65B2 /* HappyRoomCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F6216E61DD535ED002D65B2 /* HappyRoomCoreData.xcdatamodeld */; };
 		7F80AD041DBD6957002668D5 /* filledStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F80AD021DBD6957002668D5 /* filledStar.png */; };
@@ -52,6 +53,7 @@
 		7E69A58D1DC17B3900CC65DB /* Christmas Star-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas Star-50.png"; sourceTree = "<group>"; };
 		7E69A58F1DC17CE500CC65DB /* Christmas Star-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christmas Star-25.png"; sourceTree = "<group>"; };
 		7F5274331DB97B580037261C /* RateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateView.swift; sourceTree = "<group>"; };
+		7F5AECDC1DDABCA5005FFB4E /* ScatterPlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScatterPlotView.swift; sourceTree = "<group>"; };
 		7F6216E41DD533A1002D65B2 /* filledStar1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filledStar1.png; sourceTree = "<group>"; };
 		7F6216E71DD535ED002D65B2 /* HappyRoomCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HappyRoomCoreData.xcdatamodel; sourceTree = "<group>"; };
 		7F80AD021DBD6957002668D5 /* filledStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filledStar.png; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				7F8D6EBB1DA6DC0500896505 /* Assets.xcassets */,
+				7F6216E41DD533A1002D65B2 /* filledStar1.png */,
 				7F80AD021DBD6957002668D5 /* filledStar.png */,
 				7E69A58D1DC17B3900CC65DB /* Christmas Star-50.png */,
 				7F80AD031DBD6957002668D5 /* emptyStar.png */,
@@ -151,7 +154,6 @@
 		7F8D6EB11DA6DC0500896505 /* HappyRoomiOSProject */ = {
 			isa = PBXGroup;
 			children = (
-				7F6216E41DD533A1002D65B2 /* filledStar1.png */,
 				7F8D6EB21DA6DC0500896505 /* AppDelegate.swift */,
 				C0E1E3381DDA7E1D006730D8 /* ViewController.swift */,
 				7F5274331DB97B580037261C /* RateView.swift */,
@@ -161,6 +163,7 @@
 				7F8D6ECE1DA7011F00896505 /* PiechartViewController.swift */,
 				7F8D6EB41DA6DC0500896505 /* UserViewController.swift */,
 				C054698A1DC012A100A0378A /* Main.storyboard */,
+				7F5AECDC1DDABCA5005FFB4E /* ScatterPlotView.swift */,
 				C0E1E3361DDA7D3D006730D8 /* ContentViewController.swift */,
 				7F6216E61DD535ED002D65B2 /* HappyRoomCoreData.xcdatamodeld */,
 				7F5274321DB97AC80037261C /* Supporting Files */,
@@ -273,6 +276,7 @@
 			files = (
 				C0E1E3371DDA7D3D006730D8 /* ContentViewController.swift in Sources */,
 				C0D856971DC14C8900521795 /* Rating.swift in Sources */,
+				7F5AECDD1DDABCA5005FFB4E /* ScatterPlotView.swift in Sources */,
 				7F8D6EB71DA6DC0500896505 /* ScatterplotViewController.swift in Sources */,
 				C0E1E3391DDA7E1D006730D8 /* ViewController.swift in Sources */,
 				7F5274341DB97B580037261C /* RateView.swift in Sources */,

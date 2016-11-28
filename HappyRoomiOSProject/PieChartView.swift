@@ -10,18 +10,16 @@ import UIKit
 @IBDesignable
 
 class PieChartView: UIView {
-     /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
-    }
-    */
+    
     
     
     override func drawRect(rect: CGRect) {
         
-                   let sliceRating5:UIBezierPath = UIBezierPath()
+        let pieRating = [UIBezierPath()]
+//        for i in 0..<5{
+//            pieRating[0] = pieRating.append(sli)
+//        }
+        let sliceRating5:UIBezierPath = UIBezierPath()
                 sliceRating5.moveToPoint(CGPoint(x:150.0,y:150.0))
                 sliceRating5.addArcWithCenter(CGPoint(x:150.0,y:150.0), radius: 150.0, startAngle: 0.0, endAngle: CGFloat(2*M_PI/5), clockwise: true)
         

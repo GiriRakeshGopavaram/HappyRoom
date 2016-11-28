@@ -17,7 +17,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         super.viewDidLoad()
 
         self.pageTitles = NSArray(objects:"Introduction", "Introduction" )
-        self.pageImages = NSArray(objects: "login.png", "emptyStar.png")
+        self.pageImages = NSArray(objects: "User", "Pie")
         self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         
         self.pageViewController.dataSource = self
